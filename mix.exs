@@ -10,6 +10,12 @@ defmodule MixErlangTasks.Mixfile do
       package: package(),
     ]
   end
+  
+  def application do
+    [
+      extra_applications: [:common_test, :edoc, :eunit]
+    ]
+  end  
 
   defp description do
     "This project provides a few Mix tasks that make it more convenient to use Mix " <>
